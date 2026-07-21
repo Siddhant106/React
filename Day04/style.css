@@ -57,3 +57,25 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.sortPrice{
+    background-color:plum;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 95px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color:rgb(72, 0, 0);
+    font-weight: bold;
+}
+
+.priceAbove999{
+    background-color:plum;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color:rgb(72, 0, 0);
+    font-weight: bold;
+}

@@ -1,18 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import ReactDOM from "react-dom/client";
 import Card from "./components/Card";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import clothesWithOffers from "./utils/dummy_data";
+import priceSort from "./components/PriceSort";
 // import { greet as neet, meet} from "./utils/dummy_data";
 
 // In export default:- no need of {}
 // In export:- need of {}
 
-
 function App(){
+
+    let [arrSort, setArrSort] = useState(clothesWithOffers);
+
+    function priceAbove999() {
+        const above999 = clothesWithOffers.filter((val)=>val.price>999);
+        setArrSort(above999);
+    }
+
     return(<>
         <Header></Header>
+
+        <button className="sortPrice" onClick={()=>priceSort(arrSort, setArrSort)}>Sort by Price</button>
+
+        <button className="priceAbove999" onClick={priceAbove999}>Price above 999</button>
 
         <div className="middle" style={{display:"flex", gap:"15px", flexWrap:"wrap"}}>
                 {/* <Card cloth="T-Shirt" offer="40-80% off"/>
@@ -27,7 +39,7 @@ function App(){
                 <Card cloth="Kurta" offer="25-45% off"/>
                 <Card cloth="Hoodie" offer="20-60% off"/>  */}
             {
-                clothesWithOffers.map((value, index)=> <Card key={index} cloth={value.cloth} offer={value.offer}/>)
+                arrSort.map((value, index)=> <Card key={index} cloth={value.cloth} offer={value.offer} price={value.price}/>)
             }
         </div>
 
