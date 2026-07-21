@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    background-color: darkslategrey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    background-color: lightpink;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+button {
+    height: 60px;
+    width: 120px;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+#b1 {
+    margin-right: 10px;
+}
