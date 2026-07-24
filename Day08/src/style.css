@@ -1,0 +1,70 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#heading {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: powderblue;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: darkred;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.cards {
+    text-align: center;
+    border: 5px solid coral;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-color: rgb(243, 228, 228);
+}
+
+.butt {
+    margin-top: 20px;
+}
+
+.search {
+    margin-left: 35vw;
+    width: 300px;
+    border-radius: 10px;
+    height: 30px;
+    border: 2px solid darkred;
+    font-size: 15px;
+    padding-left: 1vw;
+
+}
+
+Button {
+    height: 35px;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: cornflowerblue;
+    color:honeydew;
+    margin-left: 1vw;
+}

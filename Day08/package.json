@@ -1,0 +1,25 @@
+{
+  "name": "reactbasics",
+  "version": "1.0.0",
+  "description": "\"Github Profile in React\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siddhant106/React.git"
+  },
+  "author": "Siddhant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Siddhant106/React/issues"
+  },
+  "homepage": "https://github.com/Siddhant106/React#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}
