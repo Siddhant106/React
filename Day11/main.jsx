@@ -8,6 +8,7 @@ import Details from "./src/details";
 import Zero from "./src/zero";
 import Hello from "./src/hello";
 import Hi from "./src/hi";
+import Github from "./src/github";
 
 
 function App(){
@@ -29,6 +30,7 @@ function App(){
                     <Route path="hello" element={<Hello/>}></Route>
                     <Route path="hi" element={<Hi/>}></Route>
                 </Route>
+                <Route path="/github/:name" element={<Github/>}></Route>
             </Routes>
         </BrowserRouter>
     )
